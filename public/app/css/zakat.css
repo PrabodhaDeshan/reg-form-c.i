@@ -1,0 +1,59 @@
+.card {
+    max-width: 30em;
+    flex-direction: row;
+    border: 0;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+    margin: 3em auto;
+  }
+  
+  .card.bg-light-subtle {
+    background-color: #f8f9fa;
+  }
+  
+  
+  .card img {
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+  }
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-title {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .text-section {
+    max-width: 60%;
+  }
+  .cta-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: black;
+  }
+  
+  @media screen and (max-width: 475px) {
+    .card {
+      font-size: 0.9em;
+    }
+  }

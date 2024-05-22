@@ -1,0 +1,28 @@
+.icon-container {
+      display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.box {
+    cursor: pointer;
+    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+    transition: background-color 0.3s;
+    color: inherit;
+}
+
+.box i {
+    vertical-align: middle;
+    font-size: 30px;
+    color: #00B894;
+}
+
+.box:hover i {
+    color: #808080;
+}

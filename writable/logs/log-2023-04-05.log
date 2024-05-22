@@ -1,0 +1,97 @@
+CRITICAL - 2023-04-05 13:34:52 --> Invalid argument supplied for foreach()
+in APPPATH\Views\management\edit_employee_target.php on line 59.
+ 1 APPPATH\Views\management\edit_employee_target.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\management\\edit_employee_target.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\management\\edit_employee_target.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('management/edit_employee_target', [], true)
+ 5 APPPATH\Controllers\Management_ci.php(52): view('management/edit_employee_target', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Management_ci->edit_employee_target('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management_ci))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 13:35:19 --> Too few arguments to function App\Models\Management::update_recode(), 1 passed in C:\xampp\htdocs\fm_pos\app\Controllers\Management_ci.php on line 72 and exactly 2 expected
+in APPPATH\Models\Management.php on line 37.
+ 1 APPPATH\Controllers\Management_ci.php(72): App\Models\Management->update_recode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Management_ci->update_employee_target()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 13:35:57 --> Too few arguments to function App\Models\Management::update_recode(), 1 passed in C:\xampp\htdocs\fm_pos\app\Controllers\Management_ci.php on line 73 and exactly 2 expected
+in APPPATH\Models\Management.php on line 37.
+ 1 APPPATH\Controllers\Management_ci.php(73): App\Models\Management->update_recode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Management_ci->update_employee_target()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:09:48 --> Call to a member function insert() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:13:47 --> Call to a member function insert() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:14:04 --> Call to a member function insert() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:41:37 --> Call to a member function insert_id() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:46:23 --> Call to undefined method App\Controllers\Items_ci::insert_id()
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:47:19 --> Call to a member function insertID() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:50:10 --> Call to a member function insert_id() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:52:56 --> Call to a member function table() on null
+in APPPATH\Controllers\Items_ci.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 15:53:36 --> Call to a member function table() on null
+in APPPATH\Controllers\Items_ci.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 16:57:19 --> Call to undefined method App\Controllers\Items_ci::getInsertID()
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 16:57:49 --> Call to undefined method App\Controllers\Items_ci::getInsertID()
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 17:06:22 --> Call to a member function insertID() on null
+in APPPATH\Controllers\Items_ci.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

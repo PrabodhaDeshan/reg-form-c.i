@@ -1,0 +1,97 @@
+CRITICAL - 2023-03-12 08:04:05 --> Call to a member function category_a_list() on null
+in APPPATH\Controllers\Items_ci.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->category_g_01()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-12 14:32:19 --> mysqli_sql_exception: Table 'fmpos_tritcal.fmpos_category_b' doesn't exist in C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fm_pos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fm_pos\app\Models\Items.php(61): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fm_pos\app\Controllers\Items_ci.php(99): App\Models\Items->category_b_list()
+#6 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(934): App\Controllers\Items_ci->category_g_02()
+#7 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+#8 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fm_pos\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-12 14:32:19 --> Table 'fmpos_tritcal.fmpos_category_b' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fmpos_category_b`', [], false)
+ 2 APPPATH\Models\Items.php(61): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Items_ci.php(99): App\Models\Items->category_b_list()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->category_g_02()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 14:40:17 --> Invalid argument supplied for foreach()
+in APPPATH\Views\items\category_g_02.php on line 116.
+ 1 APPPATH\Views\items\category_g_02.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\items\\category_g_02.php', 116, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\items\\category_g_02.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/category_g_02', [], true)
+ 5 APPPATH\Controllers\Items_ci.php(100): view('items/category_g_02')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->category_g_02()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 15:20:22 --> Invalid argument supplied for foreach()
+in APPPATH\Views\items\category_g_03.php on line 116.
+ 1 APPPATH\Views\items\category_g_03.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\items\\category_g_03.php', 116, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\items\\category_g_03.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('items/category_g_03', [], true)
+ 5 APPPATH\Controllers\Items_ci.php(170): view('items/category_g_03')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->category_g_03()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-12 15:20:51 --> mysqli_sql_exception: Table 'fmpos_tritcal.fmpos_category_c' doesn't exist in C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fm_pos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fm_pos\app\Models\Items.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fm_pos\app\Controllers\Items_ci.php(170): App\Models\Items->category_c_list()
+#6 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(934): App\Controllers\Items_ci->category_g_03()
+#7 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+#8 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fm_pos\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-12 15:20:51 --> Table 'fmpos_tritcal.fmpos_category_c' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fmpos_category_c`', [], false)
+ 2 APPPATH\Models\Items.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Items_ci.php(170): App\Models\Items->category_c_list()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->category_g_03()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-12 15:36:08 --> mysqli_sql_exception: Table 'fmpos_tritcal.fmpos_racks' doesn't exist in C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fm_pos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fm_pos\app\Models\Items.php(133): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fm_pos\app\Controllers\Items_ci.php(24): App\Models\Items->rack_list()
+#6 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(934): App\Controllers\Items_ci->rack_management()
+#7 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+#8 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fm_pos\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-12 15:36:08 --> Table 'fmpos_tritcal.fmpos_racks' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `fmpos_racks`', [], false)
+ 2 APPPATH\Models\Items.php(133): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Items_ci.php(24): App\Models\Items->rack_list()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->rack_management()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

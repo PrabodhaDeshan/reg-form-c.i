@@ -1,0 +1,56 @@
+
+/* Modal styles */
+.w3-modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index:1; /* Sit on top */
+left: 0;
+top:50px;
+width: 100%; /* Full width */
+height:100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal content */
+.w3-modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+/* Close button */
+.w3-modal-content .w3-display-topright {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.w3-modal-content .w3-display-topright:hover,
+.w3-modal-content .w3-display-topright:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.w3-container a {
+    color: black; /* Default color */
+    text-decoration: none; /* Remove underline */
+    display: block;
+     margin-bottom: 20px;
+     font-weight: bold;
+     font-size: small;
+
+
+  }
+
+  .w3-container a:hover {
+    color: blue; /* Color on hover */
+
+  }
+  .w3-container i {
+    margin-right: 5px;
+  }

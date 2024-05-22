@@ -1,0 +1,210 @@
+CRITICAL - 2024-05-22 09:42:21 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 09:42:49 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 09:43:48 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 09:43:49 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 09:43:54 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-22 09:43:57 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 11:01:07 --> mysqli_sql_exception: Column 'first_name' cannot be null in C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\registration\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\registration\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\registration\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\registration\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\registration\app\Controllers\Register.php(36): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\registration\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#9 C:\xampp\htdocs\registration\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp\htdocs\registration\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\registration\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-22 11:01:07 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `last_name`, `birthday`, `gender`, `email`, `password`, `phone_number`, `picture`, `subject`) VALUES (:first_name:, :last_name:, :birthday:, :gender:, :email:, :password:, :phone_number:, :picture:, :subject:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(36): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->do_register()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 11:01:12 --> mysqli_sql_exception: Column 'first_name' cannot be null in C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\registration\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\registration\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\registration\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\registration\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\registration\app\Controllers\Register.php(36): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\registration\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#9 C:\xampp\htdocs\registration\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp\htdocs\registration\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\registration\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-22 11:01:12 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `last_name`, `birthday`, `gender`, `email`, `password`, `phone_number`, `picture`, `subject`) VALUES (:first_name:, :last_name:, :birthday:, :gender:, :email:, :password:, :phone_number:, :picture:, :subject:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(36): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->do_register()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 11:01:56 --> mysqli_sql_exception: Column 'first_name' cannot be null in C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\registration\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\registration\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\registration\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\registration\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\registration\app\Controllers\Register.php(36): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\registration\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#9 C:\xampp\htdocs\registration\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp\htdocs\registration\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\registration\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-22 11:01:56 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `last_name`, `birthday`, `gender`, `email`, `password`, `phone_number`, `picture`, `subject`) VALUES (:first_name:, :last_name:, :birthday:, :gender:, :email:, :password:, :phone_number:, :picture:, :subject:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(36): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->do_register()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 11:02:17 --> mysqli_sql_exception: Column 'first_name' cannot be null in C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\registration\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\registration\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\registration\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\registration\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\registration\app\Controllers\Register.php(36): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\registration\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#9 C:\xampp\htdocs\registration\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp\htdocs\registration\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\registration\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-22 11:02:17 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `last_name`, `birthday`, `gender`, `email`, `password`, `phone_number`, `picture`, `subject`) VALUES (:first_name:, :last_name:, :birthday:, :gender:, :email:, :password:, :phone_number:, :picture:, :subject:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(36): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->do_register()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 11:23:42 --> mysqli_sql_exception: Column 'first_name' cannot be null in C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\registration\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\registration\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\registration\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\registration\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\registration\app\Controllers\Register.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\registration\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#9 C:\xampp\htdocs\registration\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp\htdocs\registration\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\registration\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-22 11:23:42 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `last_name`, `birthday`, `email`, `password`, `phone_number`, `picture`) VALUES (:first_name:, :last_name:, :birthday:, :email:, :password:, :phone_number:, :picture:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(35): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->do_register()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-22 11:23:46 --> mysqli_sql_exception: Column 'first_name' cannot be null in C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\registration\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\registration\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\registration\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\registration\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\registration\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\registration\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\registration\app\Controllers\Register.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\registration\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#9 C:\xampp\htdocs\registration\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\xampp\htdocs\registration\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\registration\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-22 11:23:46 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`first_name`, `last_name`, `birthday`, `email`, `password`, `phone_number`, `picture`) VALUES (:first_name:, :last_name:, :birthday:, :email:, :password:, :phone_number:, :picture:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(35): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->do_register()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

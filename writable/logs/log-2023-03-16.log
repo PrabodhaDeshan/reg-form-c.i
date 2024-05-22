@@ -1,0 +1,214 @@
+ERROR - 2023-03-16 06:18:20 --> mysqli_sql_exception: Unknown column 'supplier_id' in 'field list' in C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fm...', 0)
+#1 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fm...')
+#2 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fm...')
+#3 C:\xampp\htdocs\fm_pos\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fm...', Array, false)
+#4 C:\xampp\htdocs\fm_pos\app\Models\Items.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\fm_pos\app\Controllers\Items_ci.php(72): App\Models\Items->products_add(Array)
+#6 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+#7 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+#8 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fm_pos\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 06:18:20 --> Unknown column 'supplier_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fmpos_category_a` (`supplier_id`, `category_a_id`, `category_b_id`, `pro_name_en`, `pro_name_si`, `pro_barcode`, `rack_id`, `measurement_id`, `pro_details`, `pro_image`, `pro_warning_stock`) VALUES (:supplier_id:, :category_a_id:, :category_b_id:, :pro_name_en:, :pro_name_si:, :pro_barcode:, :rack_id:, :measurement_id:, :pro_details:, :pro_image:, :pro_warning_stock:)', [...], false)
+ 2 APPPATH\Models\Items.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 06:19:24 --> Call to a member function insert() on bool
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 06:20:40 --> Call to a member function insert() on bool
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 06:22:38 --> Call to a member function insertID() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 06:22:55 --> Call to a member function insertID() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 06:23:00 --> Call to a member function insertID() on null
+in APPPATH\Controllers\Items_ci.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 07:04:52 --> Call to a member function getInsertID() on bool
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 07:18:09 --> Use of undefined constant products_bim_add - assumed 'products_bim_add' (this will throw an Error in a future version of PHP)
+in APPPATH\Models\Items.php on line 31.
+ 1 APPPATH\Models\Items.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant products_bim_add - assumed \'products_bim_add\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Models\\Items.php', 31, [...])
+ 2 APPPATH\Controllers\Items_ci.php(106): App\Models\Items->products_bim_add([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 07:36:21 --> Call to undefined function App\Controllers\products_add()
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 07:36:47 --> Call to undefined function App\Controllers\products_price_add()
+in APPPATH\Controllers\Items_ci.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:02:51 --> Call to a member function insert_id() on null
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:03:23 --> Call to a member function insert_id() on null
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:13:10 --> Call to a member function insert_id() on null
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:49:00 --> Call to a member function insert() on null
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:49:50 --> Call to a member function table() on null
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:50:26 --> Call to a member function table() on null
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:51:10 --> Call to undefined method App\Controllers\Items_ci::getInsertID()
+in APPPATH\Controllers\Items_ci.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 08:52:33 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Items_ci.php(73): CodeIgniter\Model->__get('getInsertID')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-16 08:59:13 --> mysqli_sql_exception: Column 'pro_id' cannot be null in C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fm...', 0)
+#1 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fm...')
+#2 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fm...')
+#3 C:\xampp\htdocs\fm_pos\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fm...', Array, false)
+#4 C:\xampp\htdocs\fm_pos\app\Models\Items.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\fm_pos\app\Controllers\Items_ci.php(93): App\Models\Items->products_price_add(Array)
+#6 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+#7 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+#8 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fm_pos\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-16 08:59:13 --> Column 'pro_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fmpos_product_price` (`pro_id`, `pro_barcode`, `pro_cost_price`, `pro_re_price`, `pro_wh_price`, `pro_re_di_price`, `pro_wh_di_price`, `pe_gp_re`, `va_gp_re`, `pe_gp_wh`, `va_gp_wh`, `pe_gp_redi`, `va_gp_redi`, `pe_gp_whdi`, `va_gp_whdi`, `pro_stock`, `pro_warning_stock`) VALUES (:pro_id:, :pro_barcode:, :pro_cost_price:, :pro_re_price:, :pro_wh_price:, :pro_re_di_price:, :pro_wh_di_price:, :pe_gp_re:, :va_gp_re:, :pe_gp_wh:, :va_gp_wh:, :pe_gp_redi:, :va_gp_redi:, :pe_gp_whdi:, :va_gp_whdi:, :pro_stock:, :pro_warning_stock:)', [...], false)
+ 2 APPPATH\Models\Items.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Items_ci.php(93): App\Models\Items->products_price_add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:45:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\Items.php on line 17.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:46:50 --> Call to a member function get() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:47:23 --> Call to a member function getInsertID() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:47:37 --> Call to a member function getInsertID() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:47:46 --> Call to a member function get() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:48:34 --> Call to a member function get() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:48:54 --> Call to a member function get() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:49:33 --> Call to a member function get() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(72): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 11:55:25 --> Call to a member function insertID() on bool
+in APPPATH\Models\Items.php on line 20.
+ 1 APPPATH\Controllers\Items_ci.php(74): App\Models\Items->products_add([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Items_ci->save_products()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

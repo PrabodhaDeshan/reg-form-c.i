@@ -1,0 +1,84 @@
+CRITICAL - 2023-04-08 08:50:05 --> Too few arguments to function App\Models\Settings::company_details(), 0 passed in C:\xampp\htdocs\fm_pos\app\Controllers\Settings_ci.php on line 20 and exactly 1 expected
+in APPPATH\Models\Settings.php on line 92.
+ 1 APPPATH\Controllers\Settings_ci.php(20): App\Models\Settings->company_details()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Settings_ci->company_details()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:53:34 --> Too few arguments to function App\Models\Settings::company_details(), 0 passed in C:\xampp\htdocs\fm_pos\app\Controllers\Settings_ci.php on line 20 and exactly 1 expected
+in APPPATH\Models\Settings.php on line 92.
+ 1 APPPATH\Controllers\Settings_ci.php(20): App\Models\Settings->company_details()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Settings_ci->company_details()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:54:24 --> Too few arguments to function App\Models\Settings::company_details(), 0 passed in C:\xampp\htdocs\fm_pos\app\Controllers\Settings_ci.php on line 20 and exactly 1 expected
+in APPPATH\Models\Settings.php on line 92.
+ 1 APPPATH\Controllers\Settings_ci.php(20): App\Models\Settings->company_details()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Settings_ci->company_details()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 08:54:47 --> Too few arguments to function App\Models\Settings::company_details(), 0 passed in C:\xampp\htdocs\fm_pos\app\Controllers\Settings_ci.php on line 20 and exactly 1 expected
+in APPPATH\Models\Settings.php on line 92.
+ 1 APPPATH\Controllers\Settings_ci.php(20): App\Models\Settings->company_details()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Settings_ci->company_details()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Settings_ci))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-08 10:12:51 --> mysqli_sql_exception: Column 'target_amount' cannot be null in C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fm...', 0)
+#1 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fm...')
+#2 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fm...')
+#3 C:\xampp\htdocs\fm_pos\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fm...', Array, false)
+#4 C:\xampp\htdocs\fm_pos\app\Models\Management.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\fm_pos\app\Controllers\Management_ci.php(40): App\Models\Management->target_add(Array)
+#6 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(934): App\Controllers\Management_ci->save_employee_target()
+#7 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management_ci))
+#8 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fm_pos\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-08 10:12:51 --> Column 'target_amount' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fmpos_emp_target` (`employee_id`, `target_amount`, `month`, `year`) VALUES (:employee_id:, :target_amount:, :month:, :year:)', [...], false)
+ 2 APPPATH\Models\Management.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Management_ci.php(40): App\Models\Management->target_add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Management_ci->save_employee_target()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Management_ci))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-08 10:14:52 --> mysqli_sql_exception: Column 'username' cannot be null in C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\fm_pos\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fm...', 0)
+#1 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fm...')
+#2 C:\xampp\htdocs\fm_pos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fm...')
+#3 C:\xampp\htdocs\fm_pos\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fm...', Array, false)
+#4 C:\xampp\htdocs\fm_pos\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fm_pos\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fm_pos\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\fm_pos\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\fm_pos\app\Controllers\Index_ci.php(75): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(934): App\Controllers\Index_ci->signupAuth()
+#10 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index_ci))
+#11 C:\xampp\htdocs\fm_pos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\fm_pos\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-04-08 10:14:52 --> Column 'username' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fmpos_users` (`employee_id`, `user_status`, `user_details`, `username`, `password`) VALUES (:employee_id:, :user_status:, :user_details:, :username:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Index_ci.php(75): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Index_ci->signupAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index_ci))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-08 10:28:03 --> Call to a member function setFlashdata() on null
+in APPPATH\Controllers\Index_ci.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Index_ci->signupAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

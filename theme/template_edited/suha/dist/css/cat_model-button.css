@@ -1,0 +1,30 @@
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.btn {
+    padding: 5px 8px;
+    font-size: 5px;
+    position:;
+}
+
+.button-grid .btn a {
+    color: white; /* Set the color to white for all links inside buttons */
+  }
+  
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Add more CSS rules as needed */

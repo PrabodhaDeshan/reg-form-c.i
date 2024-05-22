@@ -1,0 +1,60 @@
+CRITICAL - 2023-03-08 16:21:22 --> Class 'App\Models\UserModel' not found
+in APPPATH\Controllers\Index_ci.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Index_ci->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:21:30 --> Class 'App\Models\UserModel' not found
+in APPPATH\Controllers\Index_ci.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Index_ci->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index_ci))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:28:25 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 898.
+ 1 APPPATH\Config\Routes.php(35): CodeIgniter\Router\RouteCollection->match([...], 'Index_ci::loginAuth')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:28:32 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 898.
+ 1 APPPATH\Config\Routes.php(35): CodeIgniter\Router\RouteCollection->match([...], 'Index_ci::loginAuth')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:28:32 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 898.
+ 1 APPPATH\Config\Routes.php(35): CodeIgniter\Router\RouteCollection->match([...], 'Index_ci::loginAuth')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:28:33 --> You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 898.
+ 1 APPPATH\Config\Routes.php(35): CodeIgniter\Router\RouteCollection->match([...], 'Index_ci::loginAuth')
+ 2 SYSTEMPATH\Router\RouteCollection.php(267): require('APPPATH\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:30:28 --> "authGuard" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 340.
+ 1 SYSTEMPATH\Filters\Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authGuard')
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter('authGuard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:31:37 --> Class 'Config\AuthGuard' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:31:53 --> Class 'CodeIgniter\Filters\AuthGuard' not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
