@@ -7,10 +7,10 @@ use CodeIgniter\Model;
 class UserModel extends Model {
 
     protected $table = 'users';
+    protected $primarykey ='id';
     protected $allowedFields = [
        
-        'first_name',
-        'last_name',
+        'name',
         'birthday',
         'email',
         'password',

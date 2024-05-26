@@ -3,7 +3,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <form method="post" action="<?=base_url("register");?>">
-
+<!-- <form action="/register/do_register" method="post" enctype="multipart/form-data"> -->
   <div class="container py-5 h-100">
     <div class="row justify-content-center align-items-center h-100">
       <div class="col-12 col-lg-9 col-xl-7">
@@ -17,22 +17,13 @@
 
                   <div data-mdb-input-init class="form-outline">
                     
-                    <label class="form-label" for="firstName">First Name</label>
-                    <input required type="text" id="first_name" class="form-control form-control-lg" />
+                    <label class="form-label" for="name">Name</label>
+                    <input required type="text" id="name" class="form-control form-control-lg" />
                   </div>
 
                 </div>
                 
-                <div class="col-md-6 mb-4">
-
-                  <div data-mdb-input-init class="form-outline">
-                    
-                    <label class="form-label" for="lastName">Last Name</label>
-                    <input required type="text" id="last_name" class="form-control form-control-lg" />
-                  </div>
-
-                </div>
-              </div>
+                
               <div class="row">
                 <div class="col-md-6 mb-4 d-flex align-items-center">
                   <div data-mdb-input-init class="form-outline datepicker w-100">  
@@ -63,7 +54,7 @@
               </div>
               
               <form action="/action_page.php">
-     <input type="file" id="picture" name="filename">
+     <input type="file" id="picture" name="picture">
  
        </form>
               <div class="mt-4 pt-2">

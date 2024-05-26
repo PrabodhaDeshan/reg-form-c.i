@@ -18,30 +18,50 @@ class Register extends BaseController
     public function do_register() {
         
         $userModel =new UserModel();
-
-        $first_name =$this->request->getPost('name'); 
-        $last_name =$this->request->getPost('last_name'); 
-        $birthday =$this->request->getPost('birthday');
-        $email =$this->request->getPost('email'); 
-        $password =$this->request->getPost('password');
-        $phone_number =$this->request->getPost('phone_number');    
-        $picture =$this->request->getPost('picture');
         
+        $file = $this->request->getFile('picture');
+        // if ($file->isValid() && ! $file->hasMoved()) {
+
+        //     $pictureName = $file->getRandomName();
+        //     $file->move('uploads/', $pictureName);
+
+           
+        // }
+
+
+        $file = $this->request->getFile('picture');
+        if ($file) {
+            if ($file->isValid() && ! $file->hasMoved()) {
+                $pictureName = $file->getRandomName();
+                $file->move('uploads/', $pictureName);
+            } else {
+                // Handle invalid file or file already moved
+                echo "File is not valid or already moved.";
+            }
+        } else {
+            // Handle no file uploaded
+            echo "No file uploaded.";
+        }
+
         
-        $data=['first_name'=>$first_name, 'last_name'=>$last_name,'birthday'=>$birthday, 'email'=>$email,    
-            'password'=> $password, 'phone_number'=>$phone_number,  'picture'=>$picture ];
 
 
-            $r = $userModel->insert($data);
 
-            if ($r) 
-            {
-              echo "User Registered Successfully!";
-            }
-            else{
-                echo "Error";
+        $data =[
+            'name'=>$this->request->getPost('name'),
+            'birthday'=>$this->request->getPost('birthday'),
+            'email'=>$this->request->getPost('email'),
+            'password'=>$this->request->getPost('password'),
+            'phone_number'=>$this->request->getPost('phone_number'),
+            'picture'=> $pictureName,
+        ];
 
-            }
+        $userModel->save($data);
+        return redirect()->to('register')->with('status','data saved');
+         
+    }
+    
+    
 
-}
+
 }
